@@ -1,0 +1,68 @@
+/* ***************** Global ************** */
+body {
+    background-color: #78b517;
+    font-family: 'monospace';
+}
+
+.app--header {
+    color: #fff;
+}
+
+
+/* ***************** Starter Component ************** */
+
+
+.starter--container {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.starter--intro {
+    border: 1px dotted #fff;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.starter--container button {
+    background-color: #026bb0;
+}
+
+/* ***************** Questions Component ************** */
+
+.questions--container {
+    color: #fff;
+}
+
+.question--word {
+    color: #e51d74;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    border: 1px dotted #fff;
+    border-radius: 5px;
+    background-color: #f5aa00;
+}
+
+.boxes--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.error--icon {
+    color: #e51d74;
+    font-size: 60px !important;
+}
+
+.success--icon {
+    color: #00f331;
+    font-size: 60px !important;
+}
+
+.icon--box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

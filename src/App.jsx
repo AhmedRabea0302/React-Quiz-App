@@ -4,12 +4,13 @@ import {
   Route
 } from 'react-router-dom'
 
-import Settings from './components/Settings'
+import Header from './components/Header'
+import Starter from './components/Starter'
 import Questions from './components/Questions'
 import FinalScreen from './components/FinalScreen'
-import { Container, Typography } from '@mui/material'
+import { Container } from '@mui/material'
 import { Box } from '@mui/system'
-
+import './App.css'
 function App() {
 
   return (
@@ -17,13 +18,14 @@ function App() {
     <Router>
       <Container maxWidth="sm">
         <Box textAlign="center" mt={5}>
-          <Typography variant='h1' fontWeight="bold">Quiz App</Typography>
+          
+          <Header />
 
           <Routes>
             
             <Route 
               path='/' 
-              element={<Settings />} 
+              element={<Starter />} 
               exact 
             >
 
@@ -37,7 +39,7 @@ function App() {
             </Route>
 
             <Route 
-              path='/score' 
+              path='/final' 
               element={<FinalScreen />}
             >
 
