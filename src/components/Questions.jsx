@@ -162,7 +162,7 @@ export default function Questions() {
 
             {/* Questions Counter */}
             <Box mt={5}>
-                Question {questionIndex + 1}/{10}
+                Question {questionIndex + 1 > 10 ? 10 : questionIndex + 1 }/{10}
             </Box>
                  
         </Box>
